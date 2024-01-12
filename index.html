@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page -->
+    <title>Stop Watch</title>
+    <!-- External stylesheet inclusion -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Title of the page -->
+    <h1 class="title">Smart-Stopwatch</h1>
+
+    <!-- Main content container -->
+    <div class="main">
+        <!-- Container for displaying stopwatch time -->
+        <div class="con1">
+            <div class="con2">
+                <!-- Time display elements -->
+                <span class="minutes">00:</span>
+                <span class="seconds">00:</span>
+                <span class="miliseconds">00</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button container for Start, Reset, and Laps buttons -->
+    <div class="butcon">
+        <!-- Start button -->
+        <button class="start">Start</button>
+        <!-- Reset button (initially hidden) -->
+        <button class="reset dont-show">Reset</button>
+        <!-- Laps button (initially hidden) -->
+        <button class="laps dont-show">Laps</button>
+        <!-- Button to clear all lap times -->
+        <button class="clear-all">Clear All</button>
+    </div>
+
+    <!-- Container for displaying lap times -->
+    <div class="laps-container">
+        <!-- Lap time items will be dynamically added here -->
+    </div>
+
+    <!-- JavaScript file inclusion -->
+    <script src="script.js"></script>
+</body>
+
+</html>

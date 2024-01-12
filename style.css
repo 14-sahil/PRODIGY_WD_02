@@ -1,0 +1,198 @@
+/* Apply box-sizing to all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/* Hide vertical scrollbar on the body */
+body {
+    overflow: hidden;
+    /* background-color: #282c34; Updated background color for the entire body */
+    background-image:url("Media/time.jpeg") ;
+    background-size:cover;
+}
+
+/* Centered title with specific styling */
+.title {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-top: -10px; /* Adjust the title's top margin */
+    margin-bottom: -50px; /* Adjust the title's bottom margin */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3em;
+    color: #473209; /* Updated title text color */
+    text-shadow: 5px 5px 0.5px rgba(0, 0, 0, 0.3); /* Added text shadow for better visibility */
+    animation: titleFadeIn 1s ease-in-out; /* Added fade-in animation */
+}
+
+
+/* Centered container for main content */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+/* Container 1 with specific styling */
+.con1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #342b3d; /* Updated background color for Container 1 */
+    border: 2px solid black;
+    height: 40vh;
+    width: 40vw; 
+    border-radius: 20px;
+    margin-bottom: -50px; /* Adjust the bottom margin to overlap with the next container */
+    animation: containerFadeIn 1s ease-in-out; /* Added fade-in animation */
+}
+
+/* Container 2 with specific styling */
+.con2 {
+    display: flex;
+    background-color:#342b3d;
+    /* background-image: url("Media/t2.jpeg");
+    background-size: cover; */
+    
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 37vh;
+    width: 39vw; 
+    justify-content: center;
+    align-items: center;
+    animation: containerFadeIn 1s ease-in-out; /* Added fade-in animation */
+}
+
+/* Text inside Container 2 */
+.con2 span {
+    color: #FFD580;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 8vw;
+    transition: color 0.3s ease; /* Added color transition on hover */
+}
+
+/* Button container with specific styling */
+.butcon {
+    display: flex;
+    flex-wrap: wrap; /* Allow button container to wrap to the next line on small screens */
+    margin-top: 20px; 
+    justify-content: center;
+}
+
+/* Buttons with specific styling */
+button {
+    padding: 10px;
+    margin: 10px;
+    width: 120px;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #342b3d; /* Updated button background color */
+    color: #FFD580;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 1000;
+    font-size: 1.2rem; 
+    transition: background-color 0.3s ease; /* Added background color transition on hover */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: rgb(78, 87, 65); /* Updated button background color on hover */
+    color: rgb(248, 246, 246);
+    font-size: 1.26rem;
+}
+
+/* Lap container with scrollable content */
+.laps-container {
+    height: 230px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+/* Individual lap-stop item with specific styling */
+.lap-stops {
+    color: white;
+    border: 5px solid #8a2be2; /* Updated border color for lap items */
+    display: flex;
+    justify-content: center;
+    width: 40vw;
+    list-style: none;
+    padding: 10px;
+    font-size: 1.2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #FFD580;
+    color: red;
+    border-radius: 20px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease; /* Added background color transition on hover */
+}
+
+/* Lap-stop hover effect */
+.lap-stops:hover {
+    background: #e0b862; /* Slightly darker color on hover */
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+/* Additional styling for value and rank */
+.value {
+    margin-left: 20px; 
+}
+
+.rank {
+    margin-left: -20px; 
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .con1, .con2 {
+        width: 90vw; /* Adjust the width for smaller screens */
+    }
+
+    .con2 span {
+        font-size: 12vw; /* Adjust the font size for smaller screens */
+    }
+
+    .butcon {
+        margin-top: 10px; /* Adjust the margin for smaller screens */
+        margin-bottom: -10px; /* Adjust the margin for smaller screens */
+    }
+
+    button {
+        width: 100px; /* Adjust the button width for smaller screens */
+        font-size: 1rem; /* Adjust the button font size for smaller screens */
+    }
+
+    .lap-stops {
+        width: 90vw; /* Adjust the width for smaller screens */
+    }
+
+    .value {
+        margin-left: 10px; /* Adjust the margin for smaller screens */
+    }
+
+    .rank {
+        margin-left: -10px; /* Adjust the margin for smaller screens */
+    }
+}
+
+/* Animations */
+@keyframes titleFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
